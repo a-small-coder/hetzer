@@ -1,7 +1,7 @@
 import { Box, Grid, HStack, Text, VStack } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
 import MyButton, { ButtonFubric } from "../components/Button";
-import SimpleCard, { GaleryCard, ImageCard } from "../components/Card";
+import SimpleCard, { GaleryCard, ImageCard } from "../components/Cards";
 import Headings, { HeadingsFuctoryProps } from "../components/Headings";
 import { colors } from "../theme";
 
