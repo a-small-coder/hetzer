@@ -7,6 +7,7 @@ import {
 } from 'react-icons/bs'
 import { colors } from "../../theme";
 import logo from "../../assets/icons/logo.png";
+import LargeWithAppLinksAndSocial from "../../portfolio/components/footer/Footer";
 
 export default function Footer() {
     return (
@@ -55,6 +56,14 @@ export default function Footer() {
                     </Flex>
 
                 </HStack>
+
+                <Box
+                    minH='150px'
+                    minW='100%'
+                    bg={colors.bgDark}
+                >
+                    <LargeWithAppLinksAndSocial/>
+                </Box>
             </Box>
         </Box>
     )

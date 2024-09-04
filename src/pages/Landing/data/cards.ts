@@ -99,7 +99,7 @@ export const galaryCardsProps: GalleryCardData[] = [
     },
     {
       id: 2,
-      type: 'side',
+      type: 'main',
       image: img5,
       text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consectetur qui hic quos in',
       title: 'Card title',

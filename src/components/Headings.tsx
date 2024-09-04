@@ -51,7 +51,6 @@ export default function Headings({type, text, color='white', size='2xl'}: Headin
                         alignItems='center'
                         >
                             <Heading
-                                
                                 color={color}
                                 size={size === '2xl' ? 'xs' : size}
                                 m='0px 7px'
@@ -59,7 +58,7 @@ export default function Headings({type, text, color='white', size='2xl'}: Headin
                             >
                                 {h}
                             </Heading>
-                                <Heading
+                            <Heading
                                 key={`dot-${h}`}
                                 color={color}
                                 size={size === '2xl' ? 'xs' : size}
