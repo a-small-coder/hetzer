@@ -1,3 +1,9 @@
+import { Box, Image, Text } from "@chakra-ui/react";
+import Headings from "../../../../components/Headings";
+import { colors } from "../../../../theme";
+import headingImage from '../../../../assets/images/ceh3.png'
+import logo from '../../../../assets/icons/logo.png'
+
 export default function Header() {
 
     return (
