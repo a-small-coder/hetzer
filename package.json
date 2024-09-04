@@ -5,6 +5,7 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
     "@chakra-ui/react": "^2.4.6",
+    "@chakra-ui/react-types": "^2.0.6",
     "@chakra-ui/theme": "^2.2.4",
     "@chakra-ui/theme-tools": "^2.0.16",
     "@emotion/react": "^11.0.0",
