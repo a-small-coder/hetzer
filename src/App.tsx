@@ -3,8 +3,7 @@ import {
 } from '@chakra-ui/react'
 import { Route, Routes } from 'react-router-dom'
 import ForgePage from './pages/Forge'
-import LendingPage from './pages/Lending'
-import Root from './portfolio/Root'
+import LendingPage from './pages/Landing/Lending'
 
 import theme from './theme'
 
@@ -17,11 +16,8 @@ export default function App() {
 
         <Routes>
           <Route path='/forge' element={<ForgePage/>}/>
-          <Route path='/portfolio' element={<Root/>}/>
           <Route path='/lending' element={<LendingPage/>}/>
         </Routes>
-
-
 
     </ChakraProvider>
   )
