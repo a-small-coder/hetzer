@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-no-undef */
 
-import { Box, Container, SimpleGrid, Stack, Text, useColorModeValue, VisuallyHidden } from '@chakra-ui/react';
+import { Box, Container, SimpleGrid, Stack, Text, useColorModeValue, VisuallyHidden, chakra } from '@chakra-ui/react';
 import { ReactNode } from 'react';
 import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
 
 function ListHeader ({ children }: { children: ReactNode }) {
   return (
