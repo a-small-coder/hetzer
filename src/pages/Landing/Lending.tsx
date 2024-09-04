@@ -66,47 +66,7 @@ export default function LendingPage(): JSX.Element {
           margin="auto"
         >
           {/* heading cards */}
-          <Flex
-            flexDir="column"
-            alignItems="center"
-            marginTop="-200px"
-            zIndex="60"
-            gap="30px"
-          >
-            <Headings
-              type={headingSectionChainHeading.data.type}
-              text={headingSectionChainHeading.data.text}
-              color={headingSectionChainHeading.data.color}
-            />
-
-            <Flex gap="30px" justifyContent="space-between">
-              {headingSectionCards.map((card) => (
-                <SimpleCard key={card.id} type={card.type}>
-                  <Headings
-                    type={card.heading.type}
-                    text={card.heading.text}
-                    color={card.heading.color}
-                    size={card.heading.size}
-                  />
-
-                  <Text
-                    fontSize={card.textContent.size}
-                    color={card.textContent.color}
-                    textTransform="uppercase"
-                    textAlign="center"
-                  >
-                    {card.textContent.text}
-                  </Text>
-
-                  <MyButton
-                    type={card.button.type}
-                    onClick={card.button.onClick}
-                    text={card.button.text}
-                  />
-                </SimpleCard>
-              ))}
-            </Flex>
-          </Flex>
+          
 
           {/* gallary block */}
           <Flex w="100%" flexDir="column" alignItems="center" marginTop="150px">
