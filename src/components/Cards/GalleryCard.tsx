@@ -5,13 +5,13 @@ export interface GalleryCardProps{
     image: string
     type: string
     children: JSX.Element | JSX.Element[],
-    borderColor?: string
+    // borderColor?: string 
   }
 
   export default function GalleryCard({
     type,
     image,
-    children
+    children,
   }: GalleryCardProps): JSX.Element {
   
       const iheight = type === 'main' ? "max(10rem, 30vw)" : 'max(7rem, 21vw)'

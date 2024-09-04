@@ -1,6 +1,7 @@
 import { colors } from "../../../theme";
+import { GalleryChainData, HeaderChainData } from "../types";
 
-export const headingSectionChainHeading: { data: HeadingsFuctoryProps; id: number } =
+export const headingSectionChainHeading: HeaderChainData =
 {
   id: 1,
   data: {
@@ -16,11 +17,7 @@ export const headingSectionChainHeading: { data: HeadingsFuctoryProps; id: numbe
   },
 }
 
-export const gallarySectionChainHeading: {
-  chain: HeadingsFuctoryProps
-  large: HeadingsFuctoryProps
-  id: number
-} = {
+export const gallarySectionChainHeading: GalleryChainData = {
   id: 1,
   chain: {
     type: 'chain',

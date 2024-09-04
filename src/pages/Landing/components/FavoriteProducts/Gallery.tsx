@@ -1,7 +1,8 @@
 import { Flex, VStack } from "@chakra-ui/react";
 import Carousel from 'react-elastic-carousel'
-import Headings from "../../../../components/Headings";
+import Headings, { HeadingsFuctoryProps } from "../../../../components/Headings";
 import GalleryCustomCard from "./GalleryCustomCard";
+import { GalleryCardData } from "../../types";
 
 interface FavoriteGalleryProps {
     chainSection: {
@@ -42,7 +43,7 @@ export default function FavoriteGallery({
             {/* @ts-ignore */}
             <Carousel itemsToShow={3} pagination={false}>
                 {galleryCards.map((gCard) => (
-                <GalleryCustomCard key={gCard.id} gcard={gcard}/>
+                <GalleryCustomCard key={gCard.id} gCard={gCard}/>
                 ))}
             </Carousel>
         </Flex>

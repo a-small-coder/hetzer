@@ -1,4 +1,4 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import Headings from "../../../../components/Headings";
 import { colors } from "../../../../theme";
 import headingImage from '../../../../assets/images/ceh3.png'
@@ -51,18 +51,6 @@ export default function Header() {
             <Box border="1px solid white" p="10px" w="fit-content">
               <Headings type="large" text={['manufacture']} size="lg" />
             </Box>
-
-            <Text
-              fontSize="14px"
-              textTransform="uppercase"
-              textAlign="justify"
-              mt="15px"
-            >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Provident modi animi voluptas dignissimos blanditiis ad deserunt
-              commodi maiores atque eius eum voluptatem, molestiae dolorem
-              inventore dicta enim iste impedit repellendus.
-            </Text>
           </Box>
         </Box>
       </Box>

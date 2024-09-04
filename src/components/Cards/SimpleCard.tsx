@@ -6,6 +6,7 @@ export interface SimpleCardProps {
     type: string
     // "button" | "link" | "viewMore"
     children: JSX.Element | JSX.Element[],
+    // eslint-disable-next-line react/require-default-props
     borderColor?: string
   }
 

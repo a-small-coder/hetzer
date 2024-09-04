@@ -1,9 +1,10 @@
 import { Flex } from "@chakra-ui/react";
 import Headings from "../../../../components/Headings";
 import HeadingCard from "./HeadingCard";
+import { HeaderChainData, SimpleCardsDataProps } from "../../types";
 
 interface HeadingCardsProps {
-    chainSection: { data: HeadingsFuctoryProps; id: number }
+    chainSection: HeaderChainData
     cardsSection: SimpleCardsDataProps[]
 }
 

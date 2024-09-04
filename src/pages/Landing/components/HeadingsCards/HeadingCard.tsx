@@ -2,12 +2,13 @@ import { Text } from "@chakra-ui/react";
 import SimpleCard from "../../../../components/Cards/SimpleCard";
 import Headings from "../../../../components/Headings";
 import MyButton from "../../../../components/Button";
+import { SimpleCardsDataProps } from "../../types";
 
 export default function HeadingCard({card}: {
   card: SimpleCardsDataProps
 }) {
   return (
-    <SimpleCard key={card.id} type={card.type}>
+    <SimpleCard type={card.type}>
       <Headings
         type={card.heading.type}
         text={card.heading.text}

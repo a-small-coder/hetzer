@@ -1,3 +1,11 @@
+import img5 from '../../../assets/images/man5.webp'
+
+import img from '../../../assets/images/MAN.webp'
+import img2 from '../../../assets/images/man2.webp'
+import img3 from '../../../assets/images/man3.webp'
+import img4 from '../../../assets/images/man4.webp'
+import { colors } from '../../../theme'
+import { CategoryCardData, GalleryCardData, ImageBgSectionData, SimpleCardsDataProps } from '../types'
 
 export const headingSectionCards: SimpleCardsDataProps[] = [
     {
@@ -70,17 +78,6 @@ export const headingSectionCards: SimpleCardsDataProps[] = [
       },
     },
   ]
-
-interface GalleryCardData {
-    type: string
-    image: string
-    id: number
-    text: string
-    textColor: string
-    title: string
-    titleColor: string
-    button: ButtonFubric
-}
 
 export const galaryCardsProps: GalleryCardData[] = [
     {
@@ -170,10 +167,7 @@ export const galaryCardsProps: GalleryCardData[] = [
     },
   ]
 
-export const imageSectionCardProps: {
-    card: SimpleCardsDataProps
-    chain: HeadingsFuctoryProps
-  } = {
+export const imageSectionCardProps: ImageBgSectionData = {
     card: {
       id: 1,
       type: 'opacity',
@@ -205,27 +199,7 @@ export const imageSectionCardProps: {
     },
   }
 
-export const imageCardsProps: {
-    type: string
-    image: string
-    id: number
-    textContent: {
-      size?: string,
-      text: string,
-      colror?: string,
-    },
-    mainHeader: {
-      size?: string,
-      text: string[],
-      color?: string
-    },
-    chainHeader: {
-      size?: string,
-      text: string[],
-      color?: string,
-    },
-    button: ButtonFubric
-  }[] = [
+export const imageCardsProps: CategoryCardData[] = [
     {
       id: 1,
       type: 'full',

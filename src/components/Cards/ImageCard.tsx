@@ -5,6 +5,7 @@ export interface ImageCardProps{
     image: string
     type: string
     children: JSX.Element | JSX.Element[],
+    // eslint-disable-next-line react/require-default-props
     borderColor?: string
   }
   

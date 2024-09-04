@@ -1,6 +1,7 @@
-import { Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import MyButton from "../../../../components/Button";
 import GalleryCard from "../../../../components/Cards/GalleryCard";
+import { GalleryCardData } from "../../types";
 
 export default function GalleryCustomCard({
   gCard
@@ -9,7 +10,6 @@ export default function GalleryCustomCard({
 }) {
     return (
         <GalleryCard
-          key={gCard.id}
           type={gCard.type}
           image={gCard.image}
         >
