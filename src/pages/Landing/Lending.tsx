@@ -27,8 +27,11 @@ import img2 from '../assets/images/man2.webp'
 import img3 from '../assets/images/man3.webp'
 import img4 from '../assets/images/man4.webp'
 import img6 from '../assets/images/ceh5.png'
-import { headingSectionChainHeading } from './data/other';
+import { gallarySectionChainHeading, headingSectionChainHeading } from './data/other';
 import Header from './components/Header';
+import HeadingsCards from './components/HeadingsCards/Heading';
+import FavoriteGallery from './components/FavoriteProducts/Gallery';
+import { galaryCardsProps, headingSectionCards } from './data/cards';
 
 
 interface SimpleCardsDataProps {
@@ -67,69 +70,16 @@ export default function LendingPage(): JSX.Element {
         >
           {/* heading cards */}
           
+          <HeadingsCards
+            chainSection={headingSectionChainHeading}
+            cardsSection={headingSectionCards}
+          />
 
           {/* gallary block */}
-          <Flex w="100%" flexDir="column" alignItems="center" marginTop="150px">
-            <VStack
-              maxW="60%"
-              textAlign="center"
-              marginBottom="80px"
-              spacing="40px"
-            >
-              <Headings
-                type={gallarySectionChainHeading.chain.type}
-                text={gallarySectionChainHeading.chain.text}
-                color={gallarySectionChainHeading.chain.color}
-                size={gallarySectionChainHeading.chain.size}
-              />
-
-              <Headings
-                type={gallarySectionChainHeading.large.type}
-                text={gallarySectionChainHeading.large.text}
-                color={gallarySectionChainHeading.large.color}
-                size={gallarySectionChainHeading.large.size}
-              />
-            </VStack>
-
-            {/* @ts-ignore */}
-            <Carousel itemsToShow={3} pagination={false}>
-              {galaryCardsProps.map((gCard) => (
-                <GaleryCard
-                  key={gCard.id}
-                  type={gCard.type}
-                  image={gCard.image}
-                >
-                  <Text
-                    fontSize={gCard.type === 'main' ? '42px' : '32px'}
-                    fontWeight="bold"
-                    textTransform="uppercase"
-                    textAlign="center"
-                    mb="-10px"
-                    color={gCard.titleColor}
-                  >
-                    {gCard.title}
-                  </Text>
-
-                  <Text
-                    fontSize={gCard.type === 'main' ? '14px' : '12px'}
-                    color={gCard.textColor}
-                    textTransform="uppercase"
-                    textAlign="center"
-                  >
-                    {gCard.text}
-                  </Text>
-
-                  <Box maxW="250px">
-                    <MyButton
-                      type={gCard.button.type}
-                      onClick={gCard.button.onClick}
-                      text={gCard.button.text}
-                    />
-                  </Box>
-                </GaleryCard>
-              ))}
-            </Carousel>
-          </Flex>
+          <FavoriteGallery
+            chainSection={gallarySectionChainHeading}
+            galleryCards={galaryCardsProps}
+          />
         </Box>
       </Box>
 

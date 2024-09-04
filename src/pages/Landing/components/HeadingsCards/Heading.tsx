@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import Headings from "../../../../components/Headings";
+import HeadingCard from "./HeadingCard";
 
 interface HeadingCardsProps {
     chainSection: { data: HeadingsFuctoryProps; id: number }
@@ -7,7 +8,8 @@ interface HeadingCardsProps {
 }
 
 export default function HeadingsCards({
-    chainSection
+    chainSection,
+    cardsSection
 }: HeadingCardsProps) {
     return (
         <Flex

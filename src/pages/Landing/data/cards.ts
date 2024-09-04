@@ -71,7 +71,7 @@ export const headingSectionCards: SimpleCardsDataProps[] = [
     },
   ]
 
-export const galaryCardsProps: {
+interface GalleryCardData {
     type: string
     image: string
     id: number
@@ -80,7 +80,9 @@ export const galaryCardsProps: {
     title: string
     titleColor: string
     button: ButtonFubric
-  }[] = [
+}
+
+export const galaryCardsProps: GalleryCardData[] = [
     {
       id: 1,
       type: 'side',

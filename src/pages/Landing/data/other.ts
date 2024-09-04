@@ -1,3 +1,5 @@
+import { colors } from "../../../theme";
+
 export const headingSectionChainHeading: { data: HeadingsFuctoryProps; id: number } =
 {
   id: 1,
